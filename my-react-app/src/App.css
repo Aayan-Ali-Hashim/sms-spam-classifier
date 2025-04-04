@@ -1,0 +1,88 @@
+@import 'animate.css';
+.App {
+  text-align: center;
+}
+.loader {
+  border: 8px solid #210f0f;
+  border-top: 10px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  z-index: 1000;  /* Ensure the loader appears on top of other content */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+  margin:2vh 0;
+  font-size: 8vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+textarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border: 0;
+  size-adjust: none;
+  width: 80%;
+  height: 40%;
+  font-size: 5vh;
+  background-color: transparent;
+  overflow: hidden;
+}
+textarea:focus{
+  outline: none;
+}
+
+p{
+  background: none;
+  text-align: center;
+  color: #ffffff;
+  margin:2vh 0;
+  font-size: 5vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mybutton{
+  margin: 2vh 0;
+  padding: 1vh 2vh;
+  border: 0;
+  box-shadow: 0 0 10px rgba(180, 67, 255, 0.982);
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+  border-radius: 3vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mybutton:hover {
+  box-shadow: 0 0 10px rgba(180, 67, 255, 0.982);
+  background-color: #9500ff; /* Hover background color */
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+  border-radius: 3vh;
+  cursor: pointer;
+}

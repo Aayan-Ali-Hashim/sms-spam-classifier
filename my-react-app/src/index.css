@@ -1,0 +1,11 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-y: hidden;
+overflow-x: hidden;
+background-image: url('./assets/bg-p2.avif');
+background-repeat: no-repeat;
+background-size: cover;
+/* border: 2px solid red; */
+}
